@@ -1,0 +1,19 @@
+<ruleset name="My Custom Ruleset" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd"
+    >
+    <description>
+        The rule for api authorization checking.
+    </description>
+
+    <rule name="ApiAuthorizationCheckingRule" language="java"  class="com.nexttrucking.next.build.tools.ApiAuthorizationCheckingRule" message="This method is not annotated with @API">
+        <description>
+            This rule detects controller methods that are not annotated with @PreAuthorize
+        </description>
+        <priority>5</priority>
+        <example><![CDATA[
+            if (condition);
+        ]]></example>
+    </rule>
+
+</ruleset>
